@@ -15,3 +15,20 @@ Route::get('/', [
     'as' => 'home_path',
     'uses' => 'PagesController@home'
 ]);
+
+Route::get('/login', [
+    'as' => 'login_path',
+    'uses' => 'AccountsController@index'
+]);
+
+
+
+/* === Backend === */
+
+Route::group(array('before' => 'auth'), function()
+{
+    Route::get('/backend', [
+        'as' => 'backend_path',
+        'uses' => 'BackendController@index'
+    ]);
+});
