@@ -12,23 +12,36 @@
 */
 
 Route::get('/', [
-    'as' => 'home_path',
-    'uses' => 'PagesController@home'
+  'as' => 'home',
+  'uses' => 'PagesController@home'
 ]);
+
+/**
+ * Sessions
+ */
 
 Route::get('/login', [
-    'as' => 'login_path',
-    'uses' => 'AccountsController@index'
+  'as' => 'login_path',
+  'uses' => 'SessionsController@create'
 ]);
 
+Route::post('/login', [
+  'as' => 'login_path',
+  'uses' => 'SessionsController@store'
+]);
+
+Route::get('/logout', [
+  'as' => 'logout_path',
+  'uses' => 'SessionsController@destroy'
+]);
 
 
 /* === Backend === */
 
 Route::group(array('before' => 'auth'), function()
 {
-    Route::get('/backend', [
-        'as' => 'backend_path',
-        'uses' => 'BackendController@index'
-    ]);
+  Route::get('/backend', [
+    'as' => 'backend_path',
+    'uses' => 'BackendController@index'
+  ]);
 });
