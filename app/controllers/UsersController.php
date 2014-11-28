@@ -1,23 +1,21 @@
 <?php
 
-class BackendController extends \BaseController {
+class UsersController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
-	 * GET /backend
+	 * GET /users
 	 *
 	 * @return Response
 	 */
 	public function index()
 	{
-		$users = User::all();
-		return View::make('backend.index')
-			->with('users', $users);
+		//
 	}
 
 	/**
 	 * Show the form for creating a new resource.
-	 * GET /backend/create
+	 * GET /users/create
 	 *
 	 * @return Response
 	 */
@@ -28,7 +26,7 @@ class BackendController extends \BaseController {
 
 	/**
 	 * Store a newly created resource in storage.
-	 * POST /backend
+	 * POST /users
 	 *
 	 * @return Response
 	 */
@@ -39,7 +37,7 @@ class BackendController extends \BaseController {
 
 	/**
 	 * Display the specified resource.
-	 * GET /backend/{id}
+	 * GET /users/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -51,7 +49,7 @@ class BackendController extends \BaseController {
 
 	/**
 	 * Show the form for editing the specified resource.
-	 * GET /backend/{id}/edit
+	 * GET /users/{id}/edit
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -63,7 +61,7 @@ class BackendController extends \BaseController {
 
 	/**
 	 * Update the specified resource in storage.
-	 * PUT /backend/{id}
+	 * PUT /users/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -75,7 +73,7 @@ class BackendController extends \BaseController {
 
 	/**
 	 * Remove the specified resource from storage.
-	 * DELETE /backend/{id}
+	 * DELETE /users/{id}
 	 *
 	 * @param  int  $id
 	 * @return Response

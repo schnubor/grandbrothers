@@ -44,4 +44,14 @@ Route::group(array('before' => 'auth'), function()
     'as' => 'backend_path',
     'uses' => 'BackendController@index'
   ]);
+
+  Route::delete('/user/{$id}', [
+    'as' => 'delete-user',
+    'uses' => 'UsersController@destroy'
+  ]);
+
+  Route::post('/user', [
+    'as' => 'store-user',
+    'uses' => 'UsersController@store'
+  ]);
 });
