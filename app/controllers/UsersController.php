@@ -32,12 +32,13 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::only('username','password');
+		$input = Input::only('username','email','password');
 
 		// validate the form
 		$validator = Validator::make($input, [
 			'username' => 'required',
-			'password' => 'required'
+			'email' => 'required|email',
+			'password' => 'required|min:4'
 		]);
 
 		// if invalid, go back
@@ -47,6 +48,7 @@ class UsersController extends \BaseController {
 
 		$user = User::create([
 			'username' => Input::get('username'),
+			'email' => Input::get('email'),
 			'password' => Hash::make(Input::get('password'))
 		]);
 		
@@ -66,7 +68,8 @@ class UsersController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$user = User::find($id);
+		dd($user->username);
 	}
 
 	/**
@@ -102,7 +105,11 @@ class UsersController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$user = User::find($id);
+
+		if ($user->delete()) {
+			return Redirect::back();
+		}
 	}
 
 }

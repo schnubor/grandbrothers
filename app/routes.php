@@ -11,6 +11,35 @@
 |
 */
 
+/* === Backend === */
+
+Route::group(array('before' => 'auth'), function()
+{
+  Route::get('/backend', [
+    'as' => 'backend',
+    'uses' => 'BackendController@index'
+  ]);
+
+  /**
+   * Users 
+   */
+
+  Route::resource('user', 'UsersController');
+
+  /**
+   * Sessions 
+   */
+
+  Route::get('/logout', [
+    'as' => 'logout',
+    'uses' => 'SessionsController@destroy'
+  ]);
+});
+
+/**
+ * Home
+ */
+
 Route::get('/', [
   'as' => 'home',
   'uses' => 'PagesController@home'
@@ -21,37 +50,13 @@ Route::get('/', [
  */
 
 Route::get('/login', [
-  'as' => 'login_path',
+  'as' => 'login',
   'uses' => 'SessionsController@create'
 ]);
 
 Route::post('/login', [
-  'as' => 'login_path',
+  'as' => 'login',
   'uses' => 'SessionsController@store'
 ]);
 
-Route::get('/logout', [
-  'as' => 'logout_path',
-  'uses' => 'SessionsController@destroy'
-]);
 
-
-/* === Backend === */
-
-Route::group(array('before' => 'auth'), function()
-{
-  Route::get('/backend', [
-    'as' => 'backend_path',
-    'uses' => 'BackendController@index'
-  ]);
-
-  Route::delete('/user/{$id}', [
-    'as' => 'delete-user',
-    'uses' => 'UsersController@destroy'
-  ]);
-
-  Route::post('/user', [
-    'as' => 'store-user',
-    'uses' => 'UsersController@store'
-  ]);
-});

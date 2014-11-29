@@ -42,12 +42,12 @@ class SessionsController extends \BaseController {
 
 		// if invalid, go back
 		if($validator->fails()){
-			return Redirect::route('login_path')->withErrors($validator)->withInput();
+			return Redirect::route('login')->withErrors($validator)->withInput();
 		}
 
 		if(Auth::attempt($input)){
 			// redirect to backend
-			return Redirect::route('backend_path');
+			return Redirect::route('backend');
 		}
 		
 		return Redirect::back()->withErrors($validator)->withInput();
