@@ -32,7 +32,33 @@ class DatesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::only('title','author','body','location','price','date');
+
+		// validate the form
+		$validator = Validator::make($input, [
+			'title' => 'required',
+			'body' => 'required'
+		]);
+
+		// if invalid, go back
+		if($validator->fails()){
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		$post = Date::create([
+			'title' => Input::get('title'),
+			'author' => Input::get('author'),
+			'body' => Input::get('body'),
+			'location' => Input::get('location'),
+			'price' => Input::get('price'),
+			'date' => Input::get('date')
+		]);
+		
+		if($post){
+			return Redirect::back();
+		}
+
+		return Redirect::back()->withErrors($validator)->withInput();
 	}
 
 	/**
@@ -80,7 +106,11 @@ class DatesController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$date = Date::find($id);
+
+		if ($date->delete()) {
+			return Redirect::back();
+		}
 	}
 
 }
