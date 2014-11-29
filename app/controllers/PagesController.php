@@ -10,7 +10,12 @@ class PagesController extends \BaseController {
 	 */
 	public function home()
 	{
-		return View::make('pages.home');
+		$posts = News::all();
+		$dates = Date::all();
+
+		return View::make('pages.home')
+			->with('posts',$posts)
+			->with('dates',$dates);
 	}
 
 }
