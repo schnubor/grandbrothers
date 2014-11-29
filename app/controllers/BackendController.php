@@ -11,8 +11,14 @@ class BackendController extends \BaseController {
 	public function index()
 	{
 		$users = User::all();
+		$posts = News::all();
+
+		$activeUser = Auth::user();
+
 		return View::make('backend.index')
-			->with('users', $users);
+			->with('users', $users)
+			->with('posts', $posts)
+			->with('activeUser', $activeUser);
 	}
 
 }

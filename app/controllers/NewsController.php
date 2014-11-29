@@ -32,7 +32,30 @@ class NewsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::only('title','author','body');
+
+		// validate the form
+		$validator = Validator::make($input, [
+			'title' => 'required',
+			'body' => 'required'
+		]);
+
+		// if invalid, go back
+		if($validator->fails()){
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		$post = News::create([
+			'title' => Input::get('title'),
+			'author' => Input::get('author'),
+			'body' => Input::get('body')
+		]);
+		
+		if($post){
+			return Redirect::back();
+		}
+
+		return Redirect::back()->withErrors($validator)->withInput();
 	}
 
 	/**
@@ -80,7 +103,11 @@ class NewsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$post = News::find($id);
+
+		if ($post->delete()) {
+			return Redirect::back();
+		}
 	}
 
 }

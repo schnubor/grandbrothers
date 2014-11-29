@@ -25,7 +25,7 @@ Route::group(array('before' => 'auth'), function()
    */
 
   Route::resource('user', 'UsersController');
-  Route::resource('news', 'NewssController');
+  Route::resource('news', 'NewsController');
   Route::resource('date', 'DatesController');
 
   /**
