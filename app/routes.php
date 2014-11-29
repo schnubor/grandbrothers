@@ -21,10 +21,12 @@ Route::group(array('before' => 'auth'), function()
   ]);
 
   /**
-   * Users 
+   * Users, News, Dates 
    */
 
   Route::resource('user', 'UsersController');
+  Route::resource('news', 'NewssController');
+  Route::resource('date', 'DatesController');
 
   /**
    * Sessions 
