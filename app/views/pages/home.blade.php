@@ -14,5 +14,15 @@
             @endforeach
           </ul>
         <h2>Dates</h2>
+          <ul>
+            @foreach($dates as $date)
+              <li>
+                <h3>{{ $date->title }}</h3>
+                <h4>{{ $date->date }}, {{ $date->location }}, {{ $date->price }}€</h4>
+                <p>{{ $date->body }}</p>
+
+              </li>
+            @endforeach
+          </ul>
     </div>
 @stop
