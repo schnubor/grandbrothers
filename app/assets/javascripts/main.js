@@ -1,5 +1,10 @@
-console.log('hello world'); 
+$(document).ready(function(){
+  console.log('DOM ready');
+
+  // Set heights
+  $('.welcome').height($(window).height());
+});
 
 $(window).scroll(function(){
-  $('#right').css('top', window.scrollY + 'px');
+  $('#right').css('bottom', '-' + window.scrollY + 'px');
 });

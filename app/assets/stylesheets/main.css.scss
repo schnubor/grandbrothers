@@ -21,17 +21,24 @@ body{
   position: absolute;
   left: 0;
   background-color: yellow;
-  padding: 20px;
 }
 
 #right{
   width: 50%;
   position: fixed;
   right: 0;
-  top: 0;
+  bottom: 0;
   background-color: grey;
+}
+
+.padding{
   padding: 20px;
 }
+
+.welcome{
+  background-color: cyan;
+}
+
 
 /*
  * Navigation
