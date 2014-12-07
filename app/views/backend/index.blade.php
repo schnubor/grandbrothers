@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layout.backend')
 
 @section('content')
   <div class="jumbotron">

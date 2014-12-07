@@ -1,4 +1,4 @@
-@extends('layout.default')
+@extends('layout.backend')
 
 @section('content')
     <div id="login-form" class="col-md-4 col-md-offset-4 well">

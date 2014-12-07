@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <li>News</li>
+    <li>Info</li>
+    <li>Music</li>
+    <li>Live</li>
+    <li>Contact</li>
+  </ul>
+</nav>
