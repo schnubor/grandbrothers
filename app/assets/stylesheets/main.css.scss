@@ -27,16 +27,42 @@ body{
   width: 50%;
   position: fixed;
   right: 0;
-  bottom: 0;
-  background-color: grey;
+  bottom: 0;  
 }
 
 .padding{
   padding: 20px;
 }
 
+.pic{
+  img{
+    width: 100%;
+  }
+}
+
 .welcome{
-  background-color: cyan;
+  background-color: #f0f0f0;
+  background-image: url('piano.jpg');
+  background-repeat: no-repeat;
+
+  &.left{
+    background-size: 200%;
+    background-position-y: 50%;
+  }
+
+  &.right{
+    background-size: 200%;
+    background-position-y: 50%;
+    background-position-x: 100%;
+  }
+}
+
+.pic1{
+  background-color: blue;
+}
+
+.pic2{
+  background-color: green;
 }
 
 

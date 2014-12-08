@@ -3,7 +3,7 @@
 @section('content')
   <div id="left">
     <section class="welcome left"></section>
-    <section class="news left padding">
+    <section class="news padding">
       <h2>NEWS</h2>
       <ul>
         @foreach($posts as $post)
@@ -15,9 +15,15 @@
         @endforeach
       </ul>
     </section>
+    <section class="pic pic1">
+      <?= image_tag('portrait_blue.jpg', ['alt' => 'portrait']) ?>
+    </section>
   </div><!-- EO#left -->
   <div id="right">
-    <section class="gigs right padding">
+    <section class="pic pic2">
+      <?= image_tag('portrait_red.jpg', ['alt' => 'portrait']) ?>
+    </section>
+    <section class="gigs padding">
       <h2>LIVE</h2>
       <ul>
         @foreach($dates as $date)
