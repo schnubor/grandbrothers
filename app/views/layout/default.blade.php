@@ -7,6 +7,9 @@
   <?= javascript_include_tag() ?>
 </head>
 <body>
+  <!-- Loading -->
+  <div id="loading" class="js-loading"></div>
+
   <!-- Navigation -->
   @include('layout.partials.nav')
 

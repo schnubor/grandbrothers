@@ -93,6 +93,26 @@ nav{
     li{
       display: inline-block;
       padding: 0 20px;
+      transition: .4s all ease;
+      opacity: 0;
+      transform: translateY(-50px);
+
+      &.visible{
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
+}
+
+/*
+ * Loading
+ */
+
+#loading{
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
 }
