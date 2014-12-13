@@ -14,24 +14,29 @@
 
 body{
   color: white;
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #left{
   width: 50%;
   position: absolute;
   left: 0;
-  background-color: yellow;
+  background-color: #202020;
+  color: white;
 }
 
 #right{
   width: 50%;
   position: fixed;
   right: 0;
-  bottom: 0;  
-}
-
-.padding{
-  padding: 20px;
+  bottom: 0;
+  background-color: #202020;
+  color: white;
 }
 
 .pic{
@@ -40,10 +45,26 @@ body{
   }
 }
 
+section{
+  .content{
+    margin: 20px;
+  }
+}
+
 .welcome{
   background-color: #f0f0f0;
   background-image: url('piano.jpg');
   background-repeat: no-repeat;
+
+  h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    font-size: 42px;
+    text-shadow: 0 0 10px #808080;
+  }
 
   &.left{
     background-size: 200%;

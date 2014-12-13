@@ -9,7 +9,7 @@ $(window).load(function(){
   $('#loading').fadeOut();
 
   $('nav li').each(function(index) {
-    $(this).delay(50*index).queue(function(next){
+    $(this).delay(100*index).queue(function(next){
       $(this).addClass('visible');
       next();
     });
