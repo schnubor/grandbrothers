@@ -12,7 +12,7 @@
           @foreach($posts as $post)
             <li>
               <h3>{{ $post->title }}</h3>
-              <small>by {{ $post->author }}</small>
+              <small>posted {{ $post->created_at }} by {{ $post->author }}</small>
               <p>{{ $post->body }}</p>
             </li>
           @endforeach
