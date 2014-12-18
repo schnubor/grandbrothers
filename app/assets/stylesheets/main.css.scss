@@ -79,11 +79,15 @@ section{
   }
 
   &.music{
-    background-color: #303030;
+    background-color: #252525;
   }
 
-  &.gigs{
-    background-color: #404040;
+  &.gigs, &.info{
+    background-color: #303030;
+  }
+  &.filler{
+    height: 50px;
+    background-color: #303030
   }
 }
 
@@ -116,15 +120,6 @@ section{
     background-position-x: 100%;
   }
 }
-
-.pic1{
-  background-color: blue;
-}
-
-.pic2{
-  background-color: green;
-}
-
 
 /*
  * Navigation
@@ -175,19 +170,4 @@ nav{
   width: 100%;
   position: fixed;
   z-index: 3;
-}
-
-/*
- * Footer
- */
-
-footer{
-  height: 50px;
-  position: fixed;
-  bottom: -50px;
-  z-index: 2;
-  background-color: rgba(0,0,0,.8);
-  color: #B0B0B0;
-  font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
-  width: 100%;
 }

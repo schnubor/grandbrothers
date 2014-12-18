@@ -24,9 +24,7 @@
     </section>
   </div><!-- EO#left -->
   <div id="right">
-    <section class="pic pic2">
-      <?= image_tag('portrait_red.jpg', ['alt' => 'portrait']) ?>
-    </section>
+    <section class="filler"></section>
     <section class="gigs">
       <div class="content">
         <h2>Live</h2>
@@ -41,10 +39,21 @@
         </ul>
       </div>
     </section>
+    <section class="pic pic2">
+      <?= image_tag('portrait_red.jpg', ['alt' => 'portrait']) ?>
+    </section>
     <section class="music">
       <div class="content">
         <h2>Music</h2>
         <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/16702214&amp;color=bd3b20&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+    </section>
+    <section class="info">
+      <div class="content">
+        <h2>Info</h2>
+        <p class="description">
+          The infos...
+        </p>
       </div>
     </section>
     <section class="welcome right"></section>

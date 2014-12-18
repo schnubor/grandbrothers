@@ -16,9 +16,5 @@
   <!-- Page Content -->
   @yield('content')
 
-  <!-- Footer -->
-  <footer>
-    <h3>Le Footer</h3>
-  </footer>
 </body>
 </html>
