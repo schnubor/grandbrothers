@@ -25,6 +25,9 @@
   </div><!-- EO#left -->
   <div id="right">
     <section class="filler"></section>
+    <section class="pic pic2">
+      <?= image_tag('portrait_red.jpg', ['alt' => 'portrait']) ?>
+    </section>
     <section class="gigs">
       <div class="content">
         <h2>Live</h2>
@@ -38,9 +41,6 @@
           @endforeach
         </ul>
       </div>
-    </section>
-    <section class="pic pic2">
-      <?= image_tag('portrait_red.jpg', ['alt' => 'portrait']) ?>
     </section>
     <section class="music">
       <div class="content">
