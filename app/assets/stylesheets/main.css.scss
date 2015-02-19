@@ -74,6 +74,12 @@ section{
 
   &.news{
 
+    padding: 0 10px;
+    
+    &.right{
+      overflow: hidden;
+    }
+
     h3{
       font-weight: normal;
       margin-bottom: 0px;

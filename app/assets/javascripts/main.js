@@ -7,7 +7,7 @@ $(document).ready(function(){
 
   // Set heights
   $('#loading').height($(window).height());
-  $('.welcome').height($(window).height()-40);
+  $('section').height($(window).height()-40);
 });
 
 // Page Loading

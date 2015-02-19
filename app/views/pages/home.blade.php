@@ -8,16 +8,9 @@
     </section>
     <section class="news">
       <div class="content">
-        <h2>News</h2>
-        <ul>
-          @foreach($posts as $post)
-            <li>
-              <h3>{{ $post->title }}</h3>
-              <small>posted {{ $post->created_at }} by {{ $post->author }}</small>
-              <p>{{ $post->body }}</p>
-            </li>
-          @endforeach
-        </ul>
+        <h3>{{ $post->title }}</h3>
+        <small>posted {{ $post->created_at }} by {{ $post->author }}</small>
+        <p>{{ $post->body }}</p>
       </div>
     </section>
     <section class="pic pic1">
@@ -49,13 +42,8 @@
         <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/16702214&amp;color=bd3b20&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       </div>
     </section>
-    <section class="info">
-      <div class="content">
-        <h2>Info</h2>
-        <p class="description">
-          The infos...
-        </p>
-      </div>
+    <section class="news right">
+      <?= image_tag('news.jpg', ['alt' => 'portrait', 'class' => 'contentImg']) ?>
     </section>
     <section class="welcome right">
       <?= image_tag('home2.jpg', ['alt' => 'portrait', 'class' => 'contentImg']) ?>
