@@ -1,9 +1,10 @@
 @extends('layout.default')
 
 @section('content')
+<div id="wrapper">
   <div id="left">
     <section class="welcome left">
-      <h1>Grandbrothers</h1>
+      <?= image_tag('home1.jpg', ['alt' => 'portrait', 'class' => 'contentImg']) ?>
     </section>
     <section class="news">
       <div class="content">
@@ -56,6 +57,9 @@
         </p>
       </div>
     </section>
-    <section class="welcome right"></section>
+    <section class="welcome right">
+      <?= image_tag('home2.jpg', ['alt' => 'portrait', 'class' => 'contentImg']) ?>
+    </section>
   </div><!-- EO#right -->
+</div>
 @stop

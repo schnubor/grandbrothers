@@ -6,7 +6,8 @@ $(document).ready(function(){
   console.log('DOM ready');
 
   // Set heights
-  $('.welcome, #loading').height($(window).height());
+  $('#loading').height($(window).height());
+  $('.welcome').height($(window).height()-40);
 });
 
 // Page Loading

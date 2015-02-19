@@ -18,7 +18,7 @@
 
 body{
   color: white;
-  background-color: #202020 !important;
+  background-color: white;
 
   ul{
     list-style-type: none;
@@ -27,21 +27,29 @@ body{
   }
 }
 
+#wrapper{
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contentImg{
+  width: 100%;
+}
+
 #left{
   width: 50%;
   position: absolute;
   left: 0;
-  background-color: #202020;
-  color: white;
+  color: #202020;
 }
 
 #right{
-  width: 50%;
+  width: 480px;
   position: fixed;
-  right: 0;
+  margin-left: 480px;
+  color: #202020;
   bottom: 0;
-  background-color: #202020;
-  color: white;
 }
 
 .pic{
@@ -65,7 +73,6 @@ section{
   }
 
   &.news{
-    background-color: #202020;
 
     h3{
       font-weight: normal;
@@ -83,46 +90,23 @@ section{
   }
 
   &.music{
-    background-color: #252525;
+
   }
 
-  &.gigs, &.info{
-    background-color: #303030;
-  }
-  &.filler{
-    height: 50px;
-    background-color: #303030
-  }
-}
+  &.gigs{
 
-.welcome{
-  background-color: #f0f0f0;
-  background-image: url('piano.jpg');
-  background-repeat: no-repeat;
-
-  h1{
-    margin: 0;
-    padding: 0 5px;
-    position: absolute;
-    top: 80px;
-    left: 40px;
-    font-size: 42px;
-    text-shadow: 0 0 10px #808080;
-    background-color: rgba(0,0,0,.5);
-    @include defaultFont;
-    font-weight: lighter;
   }
 
-  &.left{
-    background-size: 200%;
-    background-position-y: 50%;
+  &.info{
+
   }
 
-  &.right{
-    background-size: 200%;
-    background-position-y: 50%;
-    background-position-x: 100%;
+  &.welcome{
+    padding: 20px 10px 0;
+    margin-bottom: 20px;
+    overflow: hidden;
   }
+
 }
 
 /*
@@ -131,16 +115,20 @@ section{
 
 nav{
   position: fixed;
-  top: 0;
-  left: 0;
+  right: -120px;
+  top: calc(50% - 25px);
   z-index: 2;
-  @include defaultFont;
-  background-color: rgba(0,0,0,.8);
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   height: 50px;
-  width: 100%;
+  width: 360px;
   text-align: center;
-  color: white;
+  color: black;
   letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 24px;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
 
   ul{
     padding: 0;
@@ -169,7 +157,7 @@ nav{
  */
 
 #loading{
-  background-color: black;
+  background-color: white;
   height: 100%;
   width: 100%;
   position: fixed;
