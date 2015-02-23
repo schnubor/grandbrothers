@@ -10,6 +10,8 @@
   <!-- Loading -->
   <div id="loading" class="js-loading"></div>
 
+  <h1 id="siteTitle">Grandbrothers</h1>
+
   <!-- Navigation -->
   @include('layout.partials.nav')
 

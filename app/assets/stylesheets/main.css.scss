@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
+$red: rgb(133, 33, 33);
+$blue: #003C78;
+
 @mixin defaultFont(){
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
@@ -25,6 +28,19 @@ body{
     margin: 0;
     padding: 0;
   }
+}
+
+#siteTitle{
+  position: fixed;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  -ms-transform: rotate(270deg); /* IE 9 */
+  -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+  transform: rotate(270deg);
+  text-transform: uppercase;
+  left: -6%;
+  top: 50%;
+  margin: 0;
 }
 
 #wrapper{
@@ -59,52 +75,108 @@ body{
 }
 
 section{
+  text-align: center;
+
+  h2{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px 0;
+  }
+
   .content{
     padding: 20px;
-    @include defaultFont;
-    font-weight: lighter;
-
-    h2{
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      font-size: 42px;
-      font-weight: normal;
-    }
   }
 
   &.news{
 
-    padding: 0 10px;
-    
+    background-color: $red;
+    color: white;
+
+    &.left{
+      margin: 20px 10px;
+    }
+
     &.right{
       overflow: hidden;
+      margin: 0 10px;
     }
 
     h3{
       font-weight: normal;
-      margin-bottom: 0px;
+      padding: 40px 0 10px;
+      text-transform: uppercase;
     }
 
     small{
-      color: #B0B0B0;
+      color: white;
+      text-transform: uppercase;
     }
 
     p{
-      margin-top: 10px;
+      margin-top: 20px;
       margin-bottom: 40px;
+      text-transform: uppercase;
     }
   }
 
-  &.music{
+  &.listen{
+    background-color: white;
 
+    h2{
+      color: black;
+    }
+
+    &.left{
+      margin: 20px 10px 0;
+      overflow: hidden;
+    }
+
+    &.right{
+      margin: 20px 10px 0;
+    }
   }
 
   &.gigs{
+    color: white;
 
+    &.left{
+      margin: 20px 10px;
+      overflow: hidden;
+    }
+    
+    &.right{
+      margin: 20px 10px;
+      background-color: $blue;
+    }
   }
 
   &.info{
+    color: white;
 
+    &.left{
+      margin: 20px 10px;
+      background-color: $red;
+    }
+
+    &.right{
+      margin: 0 10px;
+      overflow: hidden;
+    }
+  }
+
+  &.contact{
+    h2{
+      color: black;
+    }
+
+    &.left{
+      margin: 20px 10px;
+      overflow: hidden;
+    }
+    &.right{
+      margin: 20px 10px;
+    }
   }
 
   &.welcome{
