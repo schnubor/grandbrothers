@@ -12,9 +12,11 @@
     </section>
     <section class="news left">
       <div class="content">
-        <h3>{{ $post->title }}</h3>
-        <small>{{ date("l d. F Y",strtotime($post->created_at)) }}</small>
-        <p>{{ $post->body }}</p>
+        @if(isset($post))
+          <h3>{{ $post->title }}</h3>
+          <small>{{ date("l d. F Y",strtotime($post->created_at)) }}</small>
+          <p>{{ $post->body }}</p>
+        @endif
       </div>
     </section>
     <section class="gigs left">
@@ -26,7 +28,7 @@
       </div>
     </section>
     <section class="contact left">
-      <?= image_tag('about.jpg', ['alt' => 'contact', 'class' => 'contentImg']) ?>
+      <?= image_tag('contact.jpg', ['alt' => 'contact', 'class' => 'contentImg']) ?>
     </section>
   </div>
 
