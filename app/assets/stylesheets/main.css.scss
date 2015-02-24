@@ -38,7 +38,7 @@ body{
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
   transform: rotate(270deg);
   text-transform: uppercase;
-  left: -6%;
+  left: -90px;
   top: 50%;
   margin: 0;
 }
@@ -76,6 +76,10 @@ body{
 
 section{
   text-align: center;
+  margin: 0 10px 20px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   h2{
     color: white;
@@ -88,18 +92,45 @@ section{
     padding: 20px;
   }
 
+  &.welcome{
+    margin-bottom: 20px;
+
+    &.left{
+      margin-top: 20px;
+      background-image: url('/assets/home1.jpg');
+    }
+    &.right{
+      background-image: url('/assets/home2.jpg');
+    }
+  }
+
+  &.listen{
+    background-color: white;
+
+    h2{
+      color: black;
+    }
+
+    &.left{
+      background-image: url('/assets/listen.jpg');
+    }
+
+    &.right{
+      
+    }
+  }
+
   &.news{
 
     background-color: $red;
     color: white;
 
     &.left{
-      margin: 20px 10px;
+      
     }
 
     &.right{
-      overflow: hidden;
-      margin: 0 10px;
+      background-image: url('/assets/news.jpg');
     }
 
     h3{
@@ -120,33 +151,14 @@ section{
     }
   }
 
-  &.listen{
-    background-color: white;
-
-    h2{
-      color: black;
-    }
-
-    &.left{
-      margin: 20px 10px 0;
-      overflow: hidden;
-    }
-
-    &.right{
-      margin: 20px 10px 0;
-    }
-  }
-
   &.gigs{
     color: white;
 
     &.left{
-      margin: 20px 10px;
-      overflow: hidden;
+      background-image: url('/assets/live.jpg');
     }
     
     &.right{
-      margin: 20px 10px;
       background-color: $blue;
     }
   }
@@ -155,13 +167,11 @@ section{
     color: white;
 
     &.left{
-      margin: 20px 10px;
       background-color: $red;
     }
 
     &.right{
-      margin: 0 10px;
-      overflow: hidden;
+      background-image: url('/assets/about.jpg');
     }
   }
 
@@ -171,18 +181,12 @@ section{
     }
 
     &.left{
-      margin: 20px 10px;
-      overflow: hidden;
+      background-image: url('/assets/contact.jpg');
     }
-    &.right{
-      margin: 20px 10px;
-    }
-  }
 
-  &.welcome{
-    padding: 20px 10px 0;
-    margin-bottom: 20px;
-    overflow: hidden;
+    &.right{
+      
+    }
   }
 
 }
