@@ -78,19 +78,22 @@
 
               {{ Form::open(['route' => 'date.store'])}}
                 <div class="form-group">
-                  {{ Form::text('title', Input::old('title'), ['class' => 'form-control', 'placeholder' => 'Title', 'required' => 'required']) }}
+                  {{ Form::text('gigTitle', Input::old('gigTitle'), ['class' => 'form-control', 'placeholder' => 'Title (required)', 'required' => 'required']) }}
                 </div>
                 <div class="form-group">
-                  {{ Form::text('date', Input::old('date'), ['class' => 'form-control', 'placeholder' => 'Date']) }}
+                  {{ Form::text('date', Input::old('date'), ['class' => 'form-control', 'placeholder' => 'Date (optional)']) }}
                 </div>
                 <div class="form-group">
-                  {{ Form::text('location', Input::old('location'), ['class' => 'form-control', 'placeholder' => 'Location']) }}
+                  {{ Form::text('location', Input::old('location'), ['class' => 'form-control', 'placeholder' => 'Location (optional)']) }}
                 </div>
                 <div class="form-group">
-                  {{ Form::text('price', Input::old('price'), ['class' => 'form-control', 'placeholder' => 'Price']) }}
+                  {{ Form::text('price', Input::old('price'), ['class' => 'form-control', 'placeholder' => 'Price (optional)']) }}
                 </div>
                 <div class="form-group">
-                  {{ Form::textarea('body', Input::old('body'), ['class' => 'form-control', 'placeholder' => 'Body', 'required' => 'required']) }}
+                  {{ Form::text('link', Input::old('link'), ['class' => 'form-control', 'placeholder' => 'Ticket link (optional)']) }}
+                </div>
+                <div class="form-group">
+                  {{ Form::textarea('body', Input::old('body'), ['class' => 'form-control', 'placeholder' => 'Description (optional)']) }}
                 </div>
                 {{ Form::hidden('author', $activeUser->username) }}
                 <div class="form-group">
@@ -108,7 +111,8 @@
                 <td><strong>{{ $date->title }}</strong></td>
                 <td>{{ $date->location }}</td>
                 <td>{{ $date->price }}€</td>
-                <td>{{ $date->created_at }} by {{ $date->author }}</td> 
+                <td>{{ $date->date }}</td> 
+                <td><a href="{{ $date->link }}" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-tags"></span> Ticket</a></td>
                 <td>
                   {{ Form::open(['route' => ['date.destroy', $date->id], 'class' => 'pull-right', 'method' => 'delete']) }}
                     {{ Form::button('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> delete', ['class' => 'btn btn-sm btn-default', 'style' => 'margin-left: 10px', 'type' => 'submit']) }}

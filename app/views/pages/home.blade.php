@@ -38,9 +38,11 @@
         <ul>
           @foreach($dates as $date)
             <li>
-              <h3>{{ $date->title }}</h3>
-              <h4>{{ $date->date }}, {{ $date->location }}, {{ $date->price }}€</h4>
-              <p>{{ $date->body }}</p>
+              @if($date->link !== '')
+                <h3><a href="{{ $date->link }}" target="_blank" title="buy tickets">{{ $date->title }}</a></h3>
+              @else
+                <h3>{{ $date->title }}</h3>
+              @endif
             </li>
           @endforeach
         </ul>
