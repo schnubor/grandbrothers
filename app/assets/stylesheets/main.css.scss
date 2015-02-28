@@ -80,6 +80,7 @@ section{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  font-weight: lighter;
 
   h2{
     color: white;
@@ -137,17 +138,20 @@ section{
       font-weight: normal;
       padding: 40px 0 10px;
       text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     small{
       color: white;
       text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     p{
       margin-top: 20px;
       margin-bottom: 40px;
-      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 2;
     }
   }
 
@@ -160,6 +164,13 @@ section{
     
     &.right{
       background-color: $blue;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 36px;
+      font-weight: lighter;
     }
   }
 
