@@ -93,6 +93,21 @@ section{
     padding: 20px;
   }
 
+  &.textSection{
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 100%; 
+      vertical-align: middle;
+    }
+
+    .centered{
+      display: inline-block;
+      vertical-align: middle;
+      width: 99%;
+    }
+  }
+
   &.welcome{
     margin-bottom: 20px;
 
@@ -166,7 +181,7 @@ section{
       background-color: $blue;
     }
 
-    a{
+    a, h3{
       text-decoration: none;
       color: white;
       font-size: 36px;
