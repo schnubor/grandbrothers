@@ -10,7 +10,7 @@
   <!-- Loading -->
   <div id="loading" class="js-loading"></div>
 
-  <h1 id="siteTitle">Grandbrothers</h1>
+  <h1 id="siteTitle"><a href="#Home" class="page-scroll">Grandbrothers</a></h1>
 
   <!-- Navigation -->
   @include('layout.partials.nav')

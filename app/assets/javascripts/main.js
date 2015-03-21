@@ -31,3 +31,16 @@ $(window).scroll(function(){
   // Padernoster effect
   $('#right').css('bottom', '-' + window.scrollY + 'px');
 });
+
+// Navigation
+// -----------------------------------------
+
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top-20
+        }, 1000, 'easeInOutCubic');
+        event.preventDefault();
+    });
+});

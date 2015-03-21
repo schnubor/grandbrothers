@@ -41,6 +41,16 @@ body{
   left: -90px;
   top: 50%;
   margin: 0;
+
+  a{
+    text-decoration: none;
+    color: black;
+
+    &:hover, &:active, &:focus{
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 
 #wrapper{
@@ -167,6 +177,7 @@ section{
       margin-bottom: 40px;
       letter-spacing: 1px;
       line-height: 2;
+      font-size: 16px;
     }
   }
 
@@ -199,6 +210,14 @@ section{
     &.right{
       background-image: url('/assets/about.jpg');
     }
+
+    p{
+      margin-top: 20px;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      line-height: 2;
+      font-size: 16px;
+    }
   }
 
   &.contact{
@@ -212,6 +231,14 @@ section{
 
     &.right{
       
+    }
+
+    p{
+      margin-top: 20px;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      line-height: 2;
+      font-size: 16px;
     }
   }
 
@@ -237,6 +264,16 @@ nav{
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
+
+  a{
+    text-decoration: none;
+    color: black;
+
+    &:hover, &:active, &:focus{
+      color: black;
+      text-decoration: none;
+    }
+  }
 
   ul{
     padding: 0;
@@ -270,4 +307,15 @@ nav{
   width: 100%;
   position: fixed;
   z-index: 3;
+}
+
+@media screen and (min-width: 1600px){
+  #wrapper{
+    width: 1280px;
+  }
+
+  #right{
+    width: 640px;
+    margin-left: 640px;
+  }
 }

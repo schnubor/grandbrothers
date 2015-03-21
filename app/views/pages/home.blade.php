@@ -4,9 +4,9 @@
 <div id="wrapper">
   <!-- Left Side -->
   <div id="left">
-    <section class="welcome left"></section>
-    <section class="listen left"></section>
-    <section class="news left textSection">
+    <section id="Home" class="welcome left"></section>
+    <section id="Music" class="listen left"></section>
+    <section id="News" class="news left textSection">
       <div class="content centered">
         @if(isset($post))
           <h3>{{ $post->title }}</h3>
@@ -15,13 +15,13 @@
         @endif
       </div>
     </section>
-    <section class="gigs left"></section>
-    <section class="info left textSection">
+    <section id="Live" class="gigs left"></section>
+    <section id="Info" class="info left textSection">
       <div class="content centered">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolorem modi nam veniam rerum doloremque, illum harum natus incidunt numquam necessitatibus animi, autem quidem accusantium eum mollitia. Voluptatum, nobis, placeat.</p>
       </div>
     </section>
-    <section class="contact left"></section>
+    <section id="Contact" class="contact left"></section>
   </div>
 
   <!-- Right Side -->
