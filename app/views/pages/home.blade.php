@@ -29,6 +29,9 @@
   <div id="right">
     <section class="contact right textSection">
       <div class="content centered">
+        <div class="film">
+          <img src="/assets/film_logo_black.png" alt="FILM Logo">
+        </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quaerat itaque quo voluptatum fugit harum odit, dolorum nisi repellendus odio eveniet sapiente praesentium eius tempore sunt non rerum, delectus amet.</p>
       </div>
     </section>

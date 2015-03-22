@@ -235,10 +235,19 @@ section{
 
     p{
       margin-top: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       letter-spacing: 1px;
       line-height: 2;
       font-size: 16px;
+    }
+
+    .film{
+      margin: 0 auto 40px;
+      width: 150px;
+
+      img{
+        width: 100%;
+      }
     }
   }
 
@@ -309,6 +318,11 @@ nav{
   z-index: 3;
 }
 
+/*
+ * Media Queries
+ */
+
+// Big screen
 @media screen and (min-width: 1600px){
   #wrapper{
     width: 1280px;
@@ -317,5 +331,46 @@ nav{
   #right{
     width: 640px;
     margin-left: 640px;
+  }
+}
+
+// Tablet
+@media screen and (max-width: 1200px){
+  #wrapper{
+    width: 100%;
+
+    #left, #right{
+      width: 100%;
+      position: static;
+    }
+
+    #right{
+      margin-left: 0;
+    }
+  }
+
+  section{
+    margin: 0 10px 10px;
+
+    &.welcome{
+      margin-bottom: 10px;
+      &.left{
+        margin-top: 10px;
+      }
+    }
+  }
+
+  nav{
+    top: 0;
+    width: 100%;
+    right: 0;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background-color: rgba(255,255,255,1);
+  }
+
+  #siteTitle{
+    display: none;
   }
 }
