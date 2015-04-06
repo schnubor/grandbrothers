@@ -36,11 +36,22 @@ $(window).scroll(function(){
 // -----------------------------------------
 
 $(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top-20
-        }, 1000, 'easeInOutCubic');
-        event.preventDefault();
-    });
+  $('a.page-scroll').bind('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top-20
+    }, 1000, 'easeInOutCubic');
+    event.preventDefault();
+  });
+});
+
+// News slider
+// -----------------------------------------
+
+$(function() {
+  $('.slider').unslider({
+    dots: true,
+    keys: true,
+    autoplay: false,
+  });
 });

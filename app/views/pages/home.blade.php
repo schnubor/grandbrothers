@@ -7,11 +7,20 @@
     <section id="Home" class="welcome left"></section>
     <section id="Music" class="listen left"></section>
     <section id="News" class="news left textSection">
-      <div class="content centered">
-        @if(isset($post))
-          <h3>{{ $post->title }}</h3>
-          <small>{{ date("l d. F Y",strtotime($post->created_at)) }}</small>
-          <p>{{ $post->body }}</p>
+      <div class="content centered slider">
+        @if(isset($posts))
+          <ul>
+            @foreach($posts as $post)
+              <li>
+                <h3>{{ $post->title }}</h3>
+                <small>{{ date("l d. F Y",strtotime($post->created_at)) }}</small>
+                <p>{{ $post->body }}</p>
+              </li>
+            @endforeach
+          </ul>
+        @else
+          <h3>Currently no news.</h3>
+          <small>Please check back later.</small>
         @endif
       </div>
     </section>

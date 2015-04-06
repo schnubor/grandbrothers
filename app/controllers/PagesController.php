@@ -10,11 +10,11 @@ class PagesController extends \BaseController {
 	 */
 	public function home()
 	{
-		$post = News::orderBy('created_at', 'DESC')->get()->last();;
+		$posts = News::orderBy('created_at', 'DESC')->take(3)->get();
 		$dates = Date::all();
 
 		return View::make('pages.home')
-			->with('post',$post)
+			->with('posts',$posts)
 			->with('dates',$dates);
 	}
 

@@ -151,6 +151,29 @@ section{
     background-color: $red;
     color: white;
 
+    .slider{
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+
+      ul{
+        li{
+          padding: 20px;
+        }
+      }
+
+      .dots{
+        list-style-type: none;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        position: relative;
+        .dot{
+          display: inline-block;
+        }
+      }
+    }
+
     &.left{
       
     }
@@ -164,6 +187,7 @@ section{
       padding: 40px 0 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
+      margin-top: 0;
     }
 
     small{
