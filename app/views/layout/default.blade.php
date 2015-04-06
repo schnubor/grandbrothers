@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <title>Grandbrothers</title>
   <?= stylesheet_link_tag() ?>
   <?= javascript_include_tag() ?>
