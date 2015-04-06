@@ -151,25 +151,40 @@ section{
     background-color: $red;
     color: white;
 
+    .content{
+      height: 100%;
+    }
+
     .slider{
       padding-left: 0;
       padding-right: 0;
       position: relative;
+      height: 100% !important;
 
       ul{
+        height: calc(100% - 20px) !important;
+
         li{
+          height: 100%;
           padding: 20px;
+          float: left;
+          height: 100%;
         }
       }
+    }
 
-      .dots{
-        list-style-type: none;
-        padding: 0;
-        height: 50px;
-        width: 100%;
-        position: relative;
-        .dot{
-          display: inline-block;
+    .dots{
+      list-style-type: none;
+      padding: 0;
+      position: relative;
+      
+      .dot{
+        display: inline-block;
+        padding: 0 10px;
+        cursor: pointer;
+
+        &.active{
+          color: #AAA;
         }
       }
     }

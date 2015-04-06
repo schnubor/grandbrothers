@@ -51,7 +51,6 @@ $(function() {
 $(function() {
   $('.slider').unslider({
     dots: true,
-    keys: true,
-    autoplay: false,
+    delay: false
   });
 });
