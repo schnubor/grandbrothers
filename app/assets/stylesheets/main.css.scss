@@ -68,6 +68,7 @@ body{
   position: absolute;
   left: 0;
   color: #202020;
+  font-family: Georgia, serif;
 }
 
 #right{
@@ -76,6 +77,7 @@ body{
   margin-left: 480px;
   color: #202020;
   bottom: 0;
+  font-family: Georgia, serif;
 }
 
 .pic{
@@ -169,6 +171,7 @@ section{
           padding: 20px;
           float: left;
           height: 100%;
+          text-align: left;
         }
       }
     }
@@ -230,12 +233,10 @@ section{
     &.right{
       background-color: $blue;
     }
-
-    a, h3{
-      text-decoration: none;
-      color: white;
-      font-size: 36px;
-      font-weight: lighter;
+    
+    li{
+      font-size: 18px;
+      padding: 15px 0;
     }
   }
 
@@ -276,16 +277,31 @@ section{
       margin-top: 20px;
       margin-bottom: 50px;
       letter-spacing: 1px;
-      line-height: 2;
+      line-height: 1.2;
       font-size: 16px;
     }
 
     .film{
       margin: 0 auto 40px;
-      width: 150px;
+      width: 100px;
 
       img{
         width: 100%;
+      }
+    }
+
+    li{
+      h4{
+        text-decoration: underline;
+        font-weight: bold;
+      }
+
+      a{
+        color: black;
+
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }

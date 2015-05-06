@@ -42,9 +42,28 @@
     <section class="contact right textSection">
       <div class="content centered">
         <div class="film">
-          <img src="/assets/film_logo_black.png" alt="FILM Logo">
+          <img src="/assets/film_logo_black.png" alt="FILM Logo" width="50px">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quaerat itaque quo voluptatum fugit harum odit, dolorum nisi repellendus odio eveniet sapiente praesentium eius tempore sunt non rerum, delectus amet.</p>
+        <ul>
+          <li>
+            <h4>Label:</h4>
+            <p>FILM <br><a href="mailto:office@film-recordings.com">office@film-recordings.com</a></p>
+          </li>
+          <li>
+            <h4>Management:</h4>
+            <p>Dominik Grötz <br><a href="mailto:dominik@film-recordings.com">dominik@film-recordings.com</a></p>
+          </li>
+          <li>
+            <h4>Booking:</h4>
+            <p>Daniel W. Best <br><a href="mailto:daniel@film-recordings.com">daniel@film-recordings.com</a></p>
+          </li>
+          <li><p>–</p></li>
+          <li>
+            <h4>Grandbrothers:</h4>
+            <p>Erol Sarp &amp; Lukas Vogel <br><a href="mailto:mail@grandbrothers.de">mail@grandbrothers.de</a></p>
+          </li>
+        </ul>
+        
       </div>
     </section>
     <section class="info right"></section>
@@ -53,11 +72,8 @@
         <ul>
           @foreach($dates as $date)
             <li>
-              @if($date->link !== '')
-                <h3><a href="{{ $date->link }}" target="_blank" title="buy tickets">{{ $date->title }}</a></h3>
-              @else
-                <h3>{{ $date->title }}</h3>
-              @endif
+                {{ $date->date }}, {{ $date->country }} {{ $date->city }} <br>
+                {{ $date->location }}
             </li>
           @endforeach
         </ul>

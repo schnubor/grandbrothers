@@ -32,11 +32,11 @@ class DatesController extends \BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::only('gigTitle','author','body','location','price','date','link');
+		$input = Input::only('date','country','city','location');
 
 		// validate the form
 		$validator = Validator::make($input, [
-			'gigTitle' => 'required'
+			'date' => 'required'
 		]);
 
 		// if invalid, go back
@@ -45,13 +45,10 @@ class DatesController extends \BaseController {
 		}
 
 		$post = Date::create([
-			'title' => Input::get('gigTitle'),
-			'author' => Input::get('author'),
-			'body' => Input::get('body'),
-			'location' => Input::get('location'),
-			'price' => Input::get('price'),
 			'date' => Input::get('date'),
-			'link' => Input::get('link')
+			'country' => Input::get('country'),
+			'city' => Input::get('city'),
+			'location' => Input::get('location')
 		]);
 		
 		if($post){

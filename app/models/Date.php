@@ -1,6 +1,6 @@
 <?php
 
 class Date extends \Eloquent {
-	protected $fillable = ['id','title','body','date','location','author','price','link'];
+	protected $fillable = ['id','city','country','date','location'];
   protected $table = 'dates';
 }
