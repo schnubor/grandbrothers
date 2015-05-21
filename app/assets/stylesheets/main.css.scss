@@ -38,9 +38,14 @@ body{
   -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
   transform: rotate(270deg);
   text-transform: uppercase;
-  left: -90px;
+  left: -390px;
   top: 50%;
   margin: 0;
+  text-align: center;
+
+  img{
+    width: 50%;
+  }
 
   a{
     text-decoration: none;
@@ -314,44 +319,50 @@ section{
 
 nav{
   position: fixed;
-  right: -120px;
-  top: calc(50% - 25px);
+  right: -200px;
+  top: calc(50% - 37px);
   z-index: 2;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  height: 50px;
-  width: 360px;
-  text-align: center;
-  color: black;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 24px;
-  -ms-transform: rotate(90deg); /* IE 9 */
-  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  width: 560px;
   transform: rotate(90deg);
-
-  a{
-    text-decoration: none;
-    color: black;
-
-    &:hover, &:active, &:focus{
-      color: black;
-      text-decoration: none;
-    }
-  }
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
 
   ul{
     padding: 0;
     margin: 0;
-    line-height: 50px;
     text-transform: uppercase;
 
     li{
       display: inline-block;
-      padding: 0 20px;
       transition: .4s all ease;
       opacity: 0;
       transform: translateY(-50px);
       cursor: pointer;
+      height: 65px;
+
+      &.nav-news{
+        text-align: right;
+      }
+
+      &.nav-info{
+        text-align: center;
+      }
+
+      &.nav-music{
+        text-align: left;
+      }
+
+      &.nav-live{
+        text-align: right;
+      }
+
+      &.nav-contact{
+        text-align: left;
+      }
+
+      img{
+        height: 100%;
+      }
 
       &.visible{
         opacity: 1;
