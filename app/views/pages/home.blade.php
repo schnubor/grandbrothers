@@ -31,7 +31,7 @@
     <section id="Info" class="info left textSection">
       <div class="content centered">
         <p>The Grandbrothers duo is made up of Erol Sarp and Lukas Vogel, two German musicians who met while attending university in Dusseldorf. Together, the pair combine synthesis, rhythmic programming, and live piano to craft modern classical hybrid compositions that would sit nicely alongside much of Nils Frahm's and the Erased Tapes' catalog.</p>
-        <p><em>- XLR8R, 2015</em></p>
+        <p class="cite"><em>- XLR8R, 2015</em></p>
       </div>
     </section>
     <section id="Contact" class="contact left"></section>

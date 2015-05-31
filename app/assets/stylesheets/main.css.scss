@@ -262,6 +262,11 @@ section{
       letter-spacing: 1px;
       line-height: 2;
       font-size: 16px;
+      text-align: left;
+
+      &.cite{
+        text-align: right;
+      }
     }
   }
 
@@ -398,6 +403,10 @@ nav{
     width: 640px;
     margin-left: 640px;
   }
+
+  nav{
+    display: block !important;
+  }
 }
 
 // Tablet
@@ -427,6 +436,7 @@ nav{
   }
 
   nav{
+    display: none !important;
     top: 0;
     width: 100%;
     right: 0;
