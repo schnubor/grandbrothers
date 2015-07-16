@@ -105,6 +105,11 @@
                 <td>{{ $date->country }}</td>
                 <td>{{ $date->city }}</td>
                 <td>{{ $date->location }}</td>
+                <td>
+                  {{ Form::open(['route' => ['date.destroy', $date->id], 'class' => 'pull-right', 'method' => 'delete']) }}
+                    {{ Form::button('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> delete', ['class' => 'btn btn-sm btn-default', 'style' => 'margin-left: 10px', 'type' => 'submit']) }}
+                  {{ Form::close() }}
+                </td>
               </tr>
               @endforeach
             </table>
