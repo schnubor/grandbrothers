@@ -118,6 +118,8 @@ section{
   }
 
   &.textSection{
+    overflow: auto;
+    
     &:before{
       content: '';
       display: inline-block;

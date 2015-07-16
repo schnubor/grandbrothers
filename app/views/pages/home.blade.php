@@ -69,7 +69,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
           </li>
           <li>
             <h4>Booking:</h4>
-            <p>Daniel W. Best <br><a href="mailto:daniel@film-recordings.com">daniel@film-recordings.com</a></p>
+            <p>Ralf Diemert <br><a href="mailto:ralf@landstreicher-booking.de">ralf@landstreicher-booking.de</a></p>
           </li>
           <li><p>–</p></li>
           <li>
@@ -96,7 +96,9 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
     <section class="news right"></section>
     <section class="listen right textSection">
       <div class="centered">
-        <iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/16702214&amp;color=bd3b20&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <h3>Grandbrothers - Dilation</h3>
+        <h5>released 23/03/2015 on FILM</h5> <br><br>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/70255378%3Fsecret_token%3Ds-4qvtI&amp;color=2c66a0&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
       </div>
     </section>
     <section class="welcome right"></section>
