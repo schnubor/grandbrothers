@@ -111,6 +111,10 @@ section{
 
   .content{
     padding: 40px;
+
+    @media screen and (max-width: 480px){
+      padding: 20px;
+    }
   }
 
   &.textSection{
@@ -124,7 +128,7 @@ section{
     .centered{
       display: inline-block;
       vertical-align: middle;
-      width: 99%;
+      width: 98%;
     }
   }
 
@@ -163,6 +167,10 @@ section{
 
     .content{
       height: 100%;
+
+      @media screen and (max-width: 480px){
+        padding: 20px;
+      }
     }
 
     .slider{
@@ -180,6 +188,10 @@ section{
           float: left;
           height: 100%;
           text-align: left;
+
+          @media screen and (max-width: 480px){
+            padding: 0px;
+          }
         }
       }
     }
@@ -214,6 +226,10 @@ section{
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: 0;
+
+      @media screen and (max-width: 480px){
+        padding: 0 0 10px;
+      }
     }
 
     small{
@@ -250,7 +266,8 @@ section{
 
   &.info{
     color: white;
-
+    overflow: auto;
+    
     &.left{
       background-color: $red;
     }
@@ -292,6 +309,11 @@ section{
       letter-spacing: 1px;
       line-height: 1.2;
       font-size: 16px;
+
+      @media screen and (max-width: 480px){
+        margin-top: 10px;
+        margin-bottom: 0px;
+      }
     }
 
     .film{
