@@ -53,7 +53,7 @@
                   {{ Form::open(['route' => ['news.destroy', $post->id], 'class' => 'pull-right', 'method' => 'delete']) }}
                     {{ Form::button('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> delete', ['class' => 'btn btn-sm btn-default', 'style' => 'margin-left: 10px', 'type' => 'submit']) }}
                   {{ Form::close() }}
-                  <button class="btn-default btn btn-sm pull-right" data-toggle="modal" data-target="#myModal" data-title="{{ $post->title }}" data-body="{{ e($post->body) }}"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                  <button class="btn-default btn btn-sm pull-right" data-toggle="modal" data-target="#myModal" data-id="{{ $post->id }}" data-title="{{ $post->title }}" data-body="{{ e($post->body) }}"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
                 </td>
               </tr>
               @endforeach

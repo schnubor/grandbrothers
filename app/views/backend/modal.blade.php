@@ -6,7 +6,7 @@
         <h4 class="modal-title">Edit news</h4>
       </div>
       <div class="modal-body">
-        {{ Form::open() }}
+        {{ Form::open(['method' => 'put', 'id' => 'editForm']) }}
           <div class="form-group">
             <input class="form-control js-title" placeholder="Title" required="required" name="title" type="text">
           </div>

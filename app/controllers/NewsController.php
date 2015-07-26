@@ -91,7 +91,32 @@ class NewsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$input = Input::only('title','body');
+
+		// validate the form
+		$validator = Validator::make($input, [
+			'title' => 'required',
+			'body' => 'required'
+		]);
+
+		// if invalid, go back
+		if($validator->fails()){
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		$id = Input::get('id');
+		$title = Input::get('title');
+		$body = Input::get('body');
+		$post = News::find($id);
+
+		$post->title = $title;
+		$post->body = $body;
+
+		if($post->save()){
+			return Redirect::back();
+		}
+
+		return Redirect::back()->withErrors($validator)->withInput();
 	}
 
 	/**
