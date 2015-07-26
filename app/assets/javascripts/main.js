@@ -3,7 +3,7 @@
 // -----------------------------------------
 
 $(document).ready(function(){
-  console.log('DOM ready');
+  console.log('Hello from grandbrothers.de');
 
   // Set heights
   $('#loading').height($(window).height());
