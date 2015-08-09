@@ -96,9 +96,13 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
     <section class="news right"></section>
     <section class="listen right textSection">
       <div class="centered">
-        <h3>Grandbrothers - Dilation</h3>
-        <h5>released 23/03/2015 on FILM</h5> <br><br>
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/70255378%3Fsecret_token%3Ds-4qvtI&amp;color=2c66a0&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false"></iframe>
+        <img src="/assets/dilation.jpg" alt="Grandbrothers - Dilation" class="album">
+        <ul class="links">
+          <li><a href="https://open.spotify.com/album/1LGAPTkAjQkpop4EWk5QKI" target="_blank">Stream</a></li>
+          <li><a href="http://hyperurl.co/jbznyb" target="_blank">Download</a></li>
+          <li><a href="http://hyperurl.co/m3qg7y" target="_blank">CD</a></li>
+          <li><a href="http://hyperurl.co/0qni9n" target="_blank">Vinyl</a></li>
+        </ul>        
       </div>
     </section>
     <section class="welcome right"></section>
