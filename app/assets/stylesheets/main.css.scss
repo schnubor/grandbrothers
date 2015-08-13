@@ -158,7 +158,46 @@ section{
     }
 
     &.right{
-      
+      h5{
+        margin-bottom: 40px;
+      }
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
+
+      .album{
+        width: 100%;
+      }
+
+      .links{
+        padding: 20px 0;
+
+        a{
+          color: black;
+          padding: 0 20px;
+        }
+      }
+
+      .videos{
+        font-size: 0;
+        li{
+          width: 33.3333%;
+
+          &:first-child{
+            text-align: left;
+          }
+
+          &:last-child{
+            text-align: right;
+          }
+
+          img{
+            width: 95%;
+          }
+        }
+      }
     }
   }
 

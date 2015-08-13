@@ -96,13 +96,20 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
     <section class="news right"></section>
     <section class="listen right textSection">
       <div class="centered">
+        <h3>Grandbrothers – Dilation</h3>
+        <h5>released 23/03/2015 on FILM</h5>
         <img src="/assets/dilation.jpg" alt="Grandbrothers - Dilation" class="album">
         <ul class="links">
           <li><a href="https://open.spotify.com/album/1LGAPTkAjQkpop4EWk5QKI" target="_blank">Stream</a></li>
           <li><a href="http://hyperurl.co/jbznyb" target="_blank">Download</a></li>
           <li><a href="http://hyperurl.co/m3qg7y" target="_blank">CD</a></li>
           <li><a href="http://hyperurl.co/0qni9n" target="_blank">Vinyl</a></li>
-        </ul>        
+        </ul>
+        <ul class="videos">
+          <li><a href="https://www.youtube.com/watch?v=1W81jQN__88" target="_blank"><img src="/assets/thumb_arctica.jpg" alt="Arctica Video"></a></li>
+          <li><a href="https://www.youtube.com/watch?v=BNLm3vo0xHI" target="_blank"><img src="/assets/thumb_naive.jpg" alt="Naive Rider Video"></a></li>
+          <li><a href="https://www.youtube.com/watch?v=Ni9kdZRHhZ4" target="_blank"><img src="/assets/thumb_ndr.jpg" alt="NDR Live"></a></li>
+        </ul>     
       </div>
     </section>
     <section class="welcome right"></section>
