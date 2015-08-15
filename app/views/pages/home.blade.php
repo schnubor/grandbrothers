@@ -53,7 +53,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
   <!-- Right Side -->
 
   <div id="right">
-    <section class="contact right textSection">
+    <section class="contact right textSection" id="mContact">
       <div class="content centered">
         <!--<div class="film">
           <img src="/assets/film_logo_black.png" alt="FILM Logo" width="50px">
@@ -81,7 +81,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
       </div>
     </section>
     <section class="info right"></section>
-    <section class="gigs right textSection">
+    <section class="gigs right textSection" id="mLive">
       <div class="content centered">
         <ul>
           @foreach($dates as $date)
@@ -94,7 +94,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
       </div>
     </section>
     <section class="news right"></section>
-    <section class="listen right textSection">
+    <section class="listen right textSection" id="mMusic">
       <div class="centered">
         <h3>Grandbrothers – Dilation</h3>
         <h5>released 23/03/2015 on FILM</h5>
