@@ -240,6 +240,7 @@ section{
 
       ul{
         height: calc(100% - 20px) !important;
+        overflow-y: auto;
 
         li{
           height: 100%;
