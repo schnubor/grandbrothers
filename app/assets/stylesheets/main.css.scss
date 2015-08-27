@@ -77,6 +77,21 @@ body{
   left: 0;
   color: #202020;
   font-family: Georgia, serif;
+
+  .mobile-only{
+    display: none;
+    @media screen and (max-width: 480px){
+      display: block;
+    }
+  }
+
+  .desktop-only{
+    display: block;
+    @media screen and (max-width: 480px){
+      display: none;
+    }
+  }
+
 }
 
 #right{
@@ -86,6 +101,9 @@ body{
   color: #202020;
   bottom: 0;
   font-family: Georgia, serif;
+  @media screen and (max-width: 480px){
+    display: none;
+  }
 }
 
 .pic{

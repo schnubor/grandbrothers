@@ -5,7 +5,26 @@
   <!-- Left Side -->
   <div id="left">
     <section id="Home" class="welcome left"></section>
-    <section id="Music" class="listen left"></section>
+    <section id="Music" class="listen left desktop-only"></section>
+    <section class="listen right textSection mobile-only" id="mMusic">
+      <div class="centered">
+        <h3>Grandbrothers – Dilation</h3>
+        <h5>released 23/03/2015 on FILM</h5>
+        <img src="/assets/dilation.jpg" alt="Grandbrothers - Dilation" class="album">
+        <ul class="links">
+          <li><a href="https://open.spotify.com/album/1LGAPTkAjQkpop4EWk5QKI" target="_blank">Stream</a></li>
+          <li><a href="http://hyperurl.co/jbznyb" target="_blank">Download</a></li>
+          <li><a href="http://hyperurl.co/m3qg7y" target="_blank">CD</a></li>
+          <li><a href="http://hyperurl.co/0qni9n" target="_blank">Vinyl</a></li>
+        </ul>
+        <ul class="videos">
+          <li><a href="https://www.youtube.com/watch?v=1W81jQN__88" target="_blank"><img src="/assets/thumb_arctica.jpg" alt="Arctica Video"></a></li>
+          <li><a href="https://www.youtube.com/watch?v=BNLm3vo0xHI" target="_blank"><img src="/assets/thumb_naive.jpg" alt="Naive Rider Video"></a></li>
+          <li><a href="https://www.youtube.com/watch?v=Ni9kdZRHhZ4" target="_blank"><img src="/assets/thumb_ndr.jpg" alt="NDR Live"></a></li>
+        </ul>     
+      </div>
+    </section>
+    <section class="news right mobile-only"></section>
     <section id="News" class="news left textSection">
       <div class="content centered">
         @if(isset($posts))
@@ -28,6 +47,19 @@
       </div>
     </section>
     <section id="Live" class="gigs left"></section>
+    <section class="gigs right textSection mobile-only" id="mLive">
+      <div class="content centered">
+        <ul>
+          @foreach($dates as $date)
+            <li>
+                {{ $date->date }}, {{ $date->country }} {{ $date->city }} <br>
+                {{ $date->location }}
+            </li>
+          @endforeach
+        </ul>
+      </div>
+    </section>
+    <section class="info right mobile-only"></section>
     <section id="Info" class="info left textSection">
       <div class="content centered">
         <p>Grandbrothers are Erol Sarp and Lukas Vogel. After meeting at university in Dusseldorf, Erol and Lukas formed Grandbrothers to tie together their respective musical backgrounds and disciplines: Erol is a trained jazz pianist, while by day Lukas constructs synthesizers at Access Music. Together, they create a sound that combines classical composition with modern, experimental production and sound design. <br><br>
@@ -48,6 +80,33 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
       </div>
     </section>
     <section id="Contact" class="contact left"></section>
+    <section class="contact right textSection mobile-only" id="mContact">
+      <div class="content centered">
+        <!--<div class="film">
+          <img src="/assets/film_logo_black.png" alt="FILM Logo" width="50px">
+        </div>-->
+        <ul>
+          <li>
+            <h4>Label:</h4>
+            <p>FILM <br><a href="mailto:office@film-recordings.com">office@film-recordings.com</a></p>
+          </li>
+          <li>
+            <h4>Management:</h4>
+            <p>Dominik Grötz <br><a href="mailto:dominik@film-recordings.com">dominik@film-recordings.com</a></p>
+          </li>
+          <li>
+            <h4>Booking:</h4>
+            <p>Ralf Diemert <br><a href="mailto:ralf@landstreicher-booking.de">ralf@landstreicher-booking.de</a></p>
+          </li>
+          <li><p>–</p></li>
+          <li>
+            <h4>Grandbrothers:</h4>
+            <p>Erol Sarp &amp; Lukas Vogel <br><a href="mailto:mail@grandbrothers.de">mail@grandbrothers.de</a></p>
+          </li>
+        </ul>
+        
+      </div>
+    </section>
   </div>
 
   <!-- Right Side -->
