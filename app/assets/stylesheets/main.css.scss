@@ -80,14 +80,14 @@ body{
 
   .mobile-only{
     display: none;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 680px){
       display: block;
     }
   }
 
   .desktop-only{
     display: block;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 680px){
       display: none;
     }
   }
@@ -101,7 +101,7 @@ body{
   color: #202020;
   bottom: 0;
   font-family: Georgia, serif;
-  @media screen and (max-width: 480px){
+  @media screen and (max-width: 680px){
     display: none;
   }
 }
@@ -568,11 +568,11 @@ nav{
         font-weight: bold;
         width: 100px;
         
-        &:nth-child(1){ width: 100px; }
-        &:nth-child(2){ width: 70px; }
-        &:nth-child(3){ width: 110px; }
-        &:nth-child(4){ width: 110px; }
-        &:nth-child(5){ width: 160px; }
+        &:nth-child(1){ width: 97px; }
+        &:nth-child(2){ width: 90px; }
+        &:nth-child(3){ width: 111px; }
+        &:nth-child(4){ width: 87px; }
+        &:nth-child(5){ width: 154px; }
 
         img{
           width: 100%;

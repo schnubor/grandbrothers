@@ -153,7 +153,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
       </div>
     </section>
     <section class="news right"></section>
-    <section class="listen right textSection" id="mMusic">
+    <section class="listen right textSection desktop-only" id="mMusic">
       <div class="centered">
         <h3>Grandbrothers – Dilation</h3>
         <h5>released 23/03/2015 on FILM</h5>
