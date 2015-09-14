@@ -130,11 +130,6 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
             <h4>Booking:</h4>
             <p>Ralf Diemert <br><a href="mailto:ralf@landstreicher-booking.de">ralf@landstreicher-booking.de</a></p>
           </li>
-          <li><p>–</p></li>
-          <li>
-            <h4>Grandbrothers:</h4>
-            <p>Erol Sarp &amp; Lukas Vogel <br><a href="mailto:mail@grandbrothers.de">mail@grandbrothers.de</a></p>
-          </li>
         </ul>
         
       </div>
