@@ -39,7 +39,6 @@
               @endforeach
             </ul>
           </div>
-          
         @else
           <h3>Currently no news.</h3>
           <small>Please check back later.</small>

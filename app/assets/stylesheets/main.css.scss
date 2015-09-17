@@ -223,6 +223,7 @@ section{
 
     background-color: $blue;
     color: white;
+    overflow-y: auto;
 
     .content{
       height: 100%;
@@ -236,17 +237,17 @@ section{
       padding-left: 0;
       padding-right: 0;
       position: relative;
-      height: 100% !important;
+      height: auto;
 
       ul{
-        height: calc(100% - 20px) !important;
+        height: auto;
         overflow-y: auto;
 
         li{
-          height: 100%;
+          height: auto;
           padding: 20px;
+          padding-bottom: 40px;
           float: left;
-          height: 100%;
           text-align: left;
 
           @media screen and (max-width: 1200px){
@@ -258,8 +259,10 @@ section{
 
     .dots{
       list-style-type: none;
-      padding: 0;
-      position: relative;
+      padding: 0px;
+      top: -8px;
+      position: absolute;
+      width: 100%;
       
       .dot{
         display: inline-block;
@@ -282,7 +285,7 @@ section{
 
     h3{
       font-weight: normal;
-      padding: 40px 0 10px;
+      padding: 0 0 10px;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: 0;
@@ -300,7 +303,7 @@ section{
 
     p{
       margin-top: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 0px;
       letter-spacing: 1px;
       line-height: 2;
       font-size: 16px;
