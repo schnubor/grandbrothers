@@ -221,7 +221,7 @@ section{
 
   &.news{
 
-    background-color: $red;
+    background-color: $blue;
     color: white;
 
     .content{
@@ -313,14 +313,14 @@ section{
   }
 
   &.gigs{
-    color: white;
+    color: black;
 
     &.left{
       background-image: url('/assets/live.jpg');
     }
     
     &.right{
-      background-color: $blue;
+      background-color: white;
     }
     
     li{
@@ -334,7 +334,7 @@ section{
     overflow: auto;
     
     &.left{
-      background-color: $red;
+      background-color: $blue;
     }
 
     &.right{
