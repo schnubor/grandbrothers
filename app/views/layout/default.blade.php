@@ -5,10 +5,11 @@
   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
   <title>Grandbrothers</title>
   <meta name="description" content="Grandbrothers is a piano / experimental duo from Düsseldorf." />
+  <link rel="canonical" href="http://www.grandbrothersmusic.com/" />
   <meta property="og:title" content="Grandbrothers" />
-  <meta property="og:site_name" content="Grandbrothers Homepage"/>
-  <meta property="og:url" content="http://www.grandbrothers.de" />
-  <meta property="og:image" content="http://www.grandbrothers.de/assets/fb_image.jpg" />
+  <meta property="og:site_name" content="Grandbrothers – official homepage"/>
+  <meta property="og:url" content="http://www.grandbrothersmusic.com/" />
+  <meta property="og:image" content="http://www.grandbrothersmusic.com/assets/fb_image.jpg" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="The Grandbrothers duo is made up of Erol Sarp and Lukas Vogel, two German musicians who met while attending university in Dusseldorf. Together, the pair combine synthesis, rhythmic programming, and live piano to craft modern classical hybrid compositions that would sit nicely alongside much of Nils Frahm's and the Erased Tapes' catalog." />
 
