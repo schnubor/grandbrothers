@@ -122,7 +122,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
           </li>
           <li>
             <h4>Booking:</h4>
-            <p>Ralf Diemert <br><a href="mailto:ralf@landstreicher-booking.de">ralf@landstreicher-booking.de</a></p>
+            <p>Ralf Diemert <br><a href="mailto:ralf@selectiveartists.com">ralf@selectiveartists.com</a></p>
           </li>
           <li><p>–</p></li>
           <li>
