@@ -50,7 +50,7 @@ class DatesController extends \BaseController {
 			'city' => Input::get('city'),
 			'location' => Input::get('location')
 		]);
-		
+
 		if($post){
 			return Redirect::back();
 		}
@@ -91,7 +91,35 @@ class DatesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+		$input = Input::only('date','country','city','location');
+
+		// validate the form
+		$validator = Validator::make($input, [
+			'country' => 'max:20'
+		]);
+
+		// if invalid, go back
+		if($validator->fails()){
+			return Redirect::back()->withErrors($validator)->withInput();
+		}
+
+		$id = Input::get('id');
+		$date = Input::get('date');
+		$country = Input::get('country');
+		$city = Input::get('city');
+		$location = Input::get('location');
+
+		$gig = Date::find($id);
+		$gig->date = $date;
+		$gig->country = $country;
+		$gig->city = $city;
+		$gig->location = $location;
+
+		if($gig->save()){
+			return Redirect::back();
+		}
+
+		return Redirect::back()->withErrors($validator)->withInput();
 	}
 
 	/**

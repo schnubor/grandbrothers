@@ -47,13 +47,13 @@
               <tr>
                 <td>#{{ $post->id }}</td>
                 <td><strong>{{ $post->title }}</strong></td>
-                <td>{{ $post->created_at }} by {{ $post->author }}</td> 
+                <td>{{ $post->created_at }} by {{ $post->author }}</td>
                 <td>
 
                   {{ Form::open(['route' => ['news.destroy', $post->id], 'class' => 'pull-right', 'method' => 'delete']) }}
                     {{ Form::button('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> delete', ['class' => 'btn btn-sm btn-default', 'style' => 'margin-left: 10px', 'type' => 'submit']) }}
                   {{ Form::close() }}
-                  <button class="btn-default btn btn-sm pull-right" data-toggle="modal" data-target="#myModal" data-id="{{ $post->id }}" data-title="{{ $post->title }}" data-body="{{ e($post->body) }}"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+                  <button class="btn-default btn btn-sm pull-right" data-toggle="modal" data-target="#newsModal" data-id="{{ $post->id }}" data-title="{{ $post->title }}" data-body="{{ e($post->body) }}"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
                 </td>
               </tr>
               @endforeach
@@ -63,7 +63,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Live Dates -->
 
     <div class="panel panel-default">
@@ -111,6 +111,7 @@
                   {{ Form::open(['route' => ['date.destroy', $date->id], 'class' => 'pull-right', 'method' => 'delete']) }}
                     {{ Form::button('<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> delete', ['class' => 'btn btn-sm btn-default', 'style' => 'margin-left: 10px', 'type' => 'submit']) }}
                   {{ Form::close() }}
+                  <button class="btn-default btn btn-sm pull-right" data-toggle="modal" data-target="#datesModal" data-id="{{ $date->id }}" data-date="{{ $date->date }}" data-country="{{ e($date->country) }}" data-city="{{ e($date->city) }}" data-location="{{ e($date->location) }}"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
                 </td>
               </tr>
               @endforeach
@@ -174,5 +175,6 @@
     </div>
   </div>
 
-  @include('backend.modal')
+  @include('backend.modals.news')
+  @include('backend.modals.dates')
 @stop

@@ -21,7 +21,7 @@
           <li><a href="https://www.youtube.com/watch?v=1W81jQN__88" target="_blank"><img src="/assets/thumb_arctica.jpg" alt="Arctica Video"></a></li>
           <li><a href="https://www.youtube.com/watch?v=BNLm3vo0xHI" target="_blank"><img src="/assets/thumb_naive.jpg" alt="Naive Rider Video"></a></li>
           <li><a href="https://www.youtube.com/watch?v=Ni9kdZRHhZ4" target="_blank"><img src="/assets/thumb_ndr.jpg" alt="NDR Live"></a></li>
-        </ul>     
+        </ul>
       </div>
     </section>
     <section class="news right mobile-only"></section>
@@ -51,8 +51,7 @@
         <ul>
           @foreach($dates as $date)
             <li>
-                {{ $date->date }}, {{ $date->country }} {{ $date->city }} <br>
-                {{ $date->location }}
+                {{ $date->date }}, {{ $date->country }} {{ $date->city }} &#8594; {{ $date->location }}
             </li>
           @endforeach
         </ul>
@@ -62,19 +61,19 @@
     <section id="Info" class="info left textSection">
       <div class="content centered">
         <p>Grandbrothers are Erol Sarp and Lukas Vogel. After meeting at university in Dusseldorf, Erol and Lukas formed Grandbrothers to tie together their respective musical backgrounds and disciplines: Erol is a trained jazz pianist, while by day Lukas constructs synthesizers at Access Music. Together, they create a sound that combines classical composition with modern, experimental production and sound design. <br><br>
- 
+
 Their first song, ‘Ezra Was Right’, earned an early supporter in the esteemed Gilles Peterson, who included the track on his Bubblers 10 compilation and played it numerous times on his Worldwide radio show for BBC Radio 6 Music, with the song eventually being voted #7 by listeners in his end-of-year poll in 2013. A full EP on FILM followed – backed by remixes from legendary Manchester DJ Greg Wilson, Optimo’s JD Twitch, and Kim Brown – which sold out its initial run within ten days. <br><br>
- 
+
 Now, Grandbrothers present their debut album, Dilation. The product of two years work, Dilation builds on some of the ideas established on ‘Ezra Was Right’ while exploring further elements of minimalism, ambient music, IDM, and techno. Tracks start as repeated two or three note patterns, which gradually develop into sweeping, cinematic soundscapes, recalling the structural and rhythmic qualities club music as much as it does the work of a composer like Steve Reich, as well as Ryuichi Sakamoto’s collaborations with Alva Noto. <br><br>
- 
+
 Surprisingly, there are no synthetic sounds on Dilation: Erol and Lukas deliberately restrict themselves to the sounds of the grand piano across the album. “We wanted to make modern-sounding music using classical instruments,” Lukas explains, “Instruments with a lot of history.” <br><br>
- 
+
 To achieve this modern sound, Lukas developed an unusual system for playing the piano. Drawing on his technical background, he created a series of electromechanical hammers that could be controlled via laptop (on software that he designed himself, no less) to ‘play’ the piano. This process allowed the duo to discover new, previously unknown sounds – sounds that couldn’t be achieved through conventional playing – which give the record its unique sonic qualities. <br><br>
- 
+
 “'Dilation' is a physical term for expansion and widening,” Erol says, “We see the project as an experiment: how far you can go with a piano? How much you can get out of it, soundwise?” <br><br>
- 
+
 With further manipulation using loops, effects, and amplification, Dilation is an album that covers an extraordinary range of sounds despite coming from such a small, unorthodox setup. <br><br>
- 
+
 Classical, yet forward-thinking; expressive and emotional, yet with one foot on the dancefloor.</p>
       </div>
     </section>
@@ -98,7 +97,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
             <p>Ralf Diemert <br><a href="mailto:ralf@landstreicher-booking.de">ralf@landstreicher-booking.de</a></p>
           </li>
         </ul>
-        
+
       </div>
     </section>
   </div>
@@ -130,7 +129,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
             <p>Erol Sarp &amp; Lukas Vogel <br><a href="mailto:mail@grandbrothers.de">mail@grandbrothers.de</a></p>
           </li>
         </ul>
-        
+
       </div>
     </section>
     <section class="info right"></section>
@@ -139,8 +138,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
         <ul>
           @foreach($dates as $date)
             <li>
-                {{ $date->date }}, {{ $date->country }} {{ $date->city }} <br>
-                {{ $date->location }}
+                {{ $date->date }}, {{ $date->country }} {{ $date->city }} &#8594; {{ $date->location }}
             </li>
           @endforeach
         </ul>
@@ -162,7 +160,7 @@ Classical, yet forward-thinking; expressive and emotional, yet with one foot on 
           <li><a href="https://www.youtube.com/watch?v=1W81jQN__88" target="_blank"><img src="/assets/thumb_arctica.jpg" alt="Arctica Video"></a></li>
           <li><a href="https://www.youtube.com/watch?v=BNLm3vo0xHI" target="_blank"><img src="/assets/thumb_naive.jpg" alt="Naive Rider Video"></a></li>
           <li><a href="https://www.youtube.com/watch?v=Ni9kdZRHhZ4" target="_blank"><img src="/assets/thumb_ndr.jpg" alt="NDR Live"></a></li>
-        </ul>     
+        </ul>
       </div>
     </section>
     <section class="welcome right"></section>

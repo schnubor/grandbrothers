@@ -1,19 +1,24 @@
-<div class="modal fade" id="myModal">
+<div class="modal fade" id="datesModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit news</h4>
+        <h4 class="modal-title">Edit live gig</h4>
       </div>
       <div class="modal-body">
-        {{ Form::open(['method' => 'put', 'id' => 'editForm']) }}
+        {{ Form::open(['method' => 'put', 'id' => 'editDateForm']) }}
           <div class="form-group">
-            <input class="form-control js-title" placeholder="Title" required="required" name="title" type="text">
+            <input class="form-control js-date" placeholder="Date" name="date" type="text">
           </div>
           <div class="form-group">
-            <textarea class="form-control js-body" placeholder="Body" required="required" name="body" cols="50" rows="10"></textarea>
+            <input class="form-control js-country" placeholder="Country" name="country" type="text">
           </div>
-        
+          <div class="form-group">
+            <input class="form-control js-city" placeholder="City" name="city" type="text">
+          </div>
+          <div class="form-group">
+            <input class="form-control js-location" placeholder="Location" name="location" type="text">
+          </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
