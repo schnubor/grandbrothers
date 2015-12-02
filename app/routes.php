@@ -21,15 +21,16 @@ Route::group(array('before' => 'auth'), function()
   ]);
 
   /**
-   * Users, News, Dates 
+   * Users, News, Dates
    */
 
   Route::resource('user', 'UsersController');
   Route::resource('news', 'NewsController');
   Route::resource('date', 'DatesController');
+  Route::resource('image', 'ImagesController');
 
   /**
-   * Sessions 
+   * Sessions
    */
 
   Route::get('/logout', [
@@ -60,5 +61,3 @@ Route::post('/login', [
   'as' => 'login',
   'uses' => 'SessionsController@store'
 ]);
-
-

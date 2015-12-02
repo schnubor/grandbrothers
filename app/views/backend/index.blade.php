@@ -96,6 +96,17 @@
                 </div>
               {{ Form::close() }}
             </div>
+
+            <div class="well clearfix">
+              <legend>Image</legend>
+
+              <img src="/assets/live.jpg" alt="Gig image" width="100%"/>
+              @include('layout.partials.errors')
+
+              {{ Form::open(['route' => 'image.store']) }}
+
+              {{ Form::close() }}
+            </div>
           </div>
           <div class="col-md-8">
             <div class="row">
