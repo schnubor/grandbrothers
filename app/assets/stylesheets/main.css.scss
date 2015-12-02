@@ -137,11 +137,11 @@ section{
 
   &.textSection{
     overflow: auto;
-    
+
     &:before{
       content: '';
       display: inline-block;
-      height: 100%; 
+      height: 100%;
       vertical-align: middle;
     }
 
@@ -263,7 +263,7 @@ section{
       top: -8px;
       position: absolute;
       width: 100%;
-      
+
       .dot{
         display: inline-block;
         padding: 0 10px;
@@ -276,7 +276,7 @@ section{
     }
 
     &.left{
-      
+
     }
 
     &.right{
@@ -321,21 +321,21 @@ section{
     &.left{
       background-image: url('/assets/live.jpg');
     }
-    
+
     &.right{
       background-color: white;
     }
-    
+
     li{
-      font-size: 18px;
-      padding: 15px 0;
+      font-size: 16px;
+      padding: 5px 0;
     }
   }
 
   &.info{
     color: white;
     overflow: auto;
-    
+
     &.left{
       background-color: $blue;
     }
@@ -368,7 +368,7 @@ section{
     }
 
     &.right{
-      
+
     }
 
     p{
@@ -571,7 +571,7 @@ nav{
         font-family: sans-serif;
         font-weight: bold;
         width: 100px;
-        
+
         &:nth-child(1){ width: 87px; }
         &:nth-child(2){ width: 79px; }
         &:nth-child(3){ width: 99px; }
