@@ -8,6 +8,7 @@
       <a href="{{ URL::route('home') }}" class="btn btn-default"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Show Site</a>
       <a href="{{ URL::route('logout') }}" class="btn btn-default"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a>
       <small>logged in as {{ $activeUser->username }}</small>
+      @include('layout.partials.errors')
     </div>
   </div>
 
@@ -23,8 +24,6 @@
           <div class="col-md-5">
             <div class="well clearfix">
               <legend>Add News Post</legend>
-
-              @include('layout.partials.errors')
 
               {{ Form::open(['route' => 'news.store'])}}
                 <div class="form-group">
@@ -76,8 +75,6 @@
             <div class="well clearfix">
               <legend>Add Live Gig</legend>
 
-              @include('layout.partials.errors')
-
               {{ Form::open(['route' => 'date.store'])}}
                 <div class="form-group">
                   {{ Form::text('date', Input::old('date'), ['class' => 'form-control', 'placeholder' => 'Date', 'required' => 'required']) }}
@@ -98,13 +95,19 @@
             </div>
 
             <div class="well clearfix">
-              <legend>Image</legend>
+              <legend>Poster</legend>
 
-              <img src="/assets/live.jpg" alt="Gig image" width="100%"/>
-              @include('layout.partials.errors')
+              <img src="/images/poster.jpg" alt="Gig image" width="100%"/>
 
-              {{ Form::open(['route' => 'image.store']) }}
-
+              {{ Form::open(['route' => 'image.store', 'files' => true]) }}
+                <div class="form-group">
+                  <label for="poster"></label>
+                  <input type="file" id="poster" name="poster">
+                  <p class="help-block">JPG, 1280 x 1920 px, max 2MB</p>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-sm btn-primary">Upload</button>
+                </div>
               {{ Form::close() }}
             </div>
           </div>

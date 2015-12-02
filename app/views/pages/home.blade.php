@@ -45,7 +45,7 @@
         @endif
       </div>
     </section>
-    <section id="Live" class="gigs left"></section>
+    <section id="Live" class="gigs left" style="background-image: url('/images/poster.jpg')"></section>
     <section class="gigs right textSection mobile-only" id="mLive">
       <div class="content centered">
         <ul>

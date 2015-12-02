@@ -32,7 +32,26 @@ class ImagesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::only('poster');
+		$file = Input::file('poster');
+
+		// validate the form
+		$validator = Validator::make($input, [
+			'poster' => 'mimes:jpeg|max:2000'
+		]);
+
+		list($width, $height) = getimagesize($file);
+
+		// if invalid, go back
+		if($validator->fails() || $width != 1280 || $height != 1920){
+			return Redirect::back()->withErrors($validator);
+		}
+
+		$destinationPath = public_path().'/images/';
+		$filename = 'poster.jpg';
+		Input::file('poster')->move($destinationPath, $filename);
+
+		return Redirect::back();
 	}
 
 	/**
@@ -68,7 +87,7 @@ class ImagesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+
 	}
 
 	/**
